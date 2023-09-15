@@ -1,0 +1,149 @@
+//banner
+.header-hero {
+     position: relative;
+     margin: -85px 10px 10px 10px;
+     padding: 50px;
+     height: 97vh;
+     border-radius: 20px;
+     background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("/assets/img/bg-header-hero.jpg"), lightgray 50%;
+     background-size: cover;
+     background-repeat: no-repeat;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     @include media-breakpoint-up(lg) {
+          padding: 150px 50px;
+     }
+
+     .header-body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          height: 60vh;
+
+          @include media-breakpoint-up(md) {
+          }
+
+          .header-text {
+               color: var(--font-white);
+               font-size: 30px;
+               font-weight: 700;
+
+               @include media-breakpoint-up(md) {
+                    font-size: 50px;
+               }
+          }
+
+          .header-desc {
+               @include media-breakpoint-up(lg) {
+                    padding: 0 300px;
+               }
+          }
+     }
+}
+
+//card-aplikasi
+.our-apps {
+     margin: 150px 0;
+
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1063%26quot%3b)' fill='none'%3e%3cpath d='M375.204%2c549.979C391.811%2c548.977%2c404.772%2c538.047%2c413.978%2c524.189C424.651%2c508.123%2c435.441%2c489.229%2c427.123%2c471.827C417.979%2c452.696%2c396.405%2c442.724%2c375.204%2c443.071C354.586%2c443.408%2c336.135%2c455.44%2c326.144%2c473.479C316.46%2c490.964%2c316.594%2c512.587%2c327.384%2c529.412C337.423%2c545.066%2c356.641%2c551.099%2c375.204%2c549.979' fill='rgba(121%2c 0%2c 15%2c 0.23)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M629.517%2c276.18C664.41%2c277.121%2c701.471%2c269.751%2c720.454%2c240.458C740.903%2c208.903%2c739.669%2c167.778%2c720.87%2c135.213C702.069%2c102.645%2c667.122%2c82.902%2c629.517%2c82.929C591.959%2c82.956%2c556.283%2c102.322%2c538.39%2c135.344C521.238%2c166.998%2c527.138%2c205.545%2c546.696%2c235.772C564.581%2c263.413%2c596.606%2c275.292%2c629.517%2c276.18' fill='rgba(121%2c 0%2c 15%2c 0.23)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1277.138%2c518.384C1310.525%2c517.204%2c1341.496%2c500.167%2c1357.735%2c470.971C1373.546%2c442.545%2c1370.47%2c408.111%2c1354.11%2c379.998C1337.855%2c352.066%2c1309.456%2c332.452%2c1277.138%2c332.476C1244.858%2c332.5%2c1217.573%2c352.802%2c1200.362%2c380.111C1181.697%2c409.726%2c1169.033%2c446.436%2c1186.026%2c477.041C1203.378%2c508.292%2c1241.415%2c519.647%2c1277.138%2c518.384' fill='rgba(121%2c 0%2c 15%2c 0.23)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M179.366%2c297.761C220.989%2c297.62%2c260.768%2c281.031%2c283.979%2c246.481C310.354%2c207.221%2c324.826%2c156.705%2c301.933%2c115.318C278.487%2c72.931%2c227.743%2c54.909%2c179.366%2c57.354C135.109%2c59.591%2c98.113%2c88.008%2c76.533%2c126.712C55.565%2c164.319%2c51.335%2c210.291%2c73.52%2c247.193C95.113%2c283.111%2c137.457%2c297.903%2c179.366%2c297.761' fill='rgba(121%2c 0%2c 15%2c 0.23)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M117%2c381.012C133.244%2c381.046%2c147.811%2c371.208%2c155.568%2c356.936C162.989%2c343.282%2c161.231%2c327.073%2c153.707%2c313.475C145.902%2c299.369%2c133.121%2c287.225%2c117%2c287.23C100.886%2c287.235%2c88.107%2c299.384%2c80.335%2c313.5C72.873%2c327.053%2c71.329%2c343.178%2c78.712%2c356.773C86.438%2c370.999%2c100.811%2c380.978%2c117%2c381.012' fill='rgba(121%2c 0%2c 15%2c 0.23)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1219.026%2c154.131C1235.717%2c155.298%2c1254.478%2c153.53%2c1263.493%2c139.434C1273.008%2c124.556%2c1269.726%2c104.841%2c1259.957%2c90.129C1251.147%2c76.861%2c1234.936%2c71.725%2c1219.026%2c72.467C1204.481%2c73.146%2c1191.403%2c80.999%2c1184.216%2c93.663C1177.123%2c106.161%2c1176.999%2c121.432%2c1184.168%2c133.886C1191.353%2c146.368%2c1204.659%2c153.126%2c1219.026%2c154.131' fill='rgba(121%2c 0%2c 15%2c 0.23)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1063'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+
+     .bg {
+          padding: 50px 0;
+          background: rgba(255, 255, 255, 0.5);
+          backdrop-filter: blur(50px);
+          -webkit-backdrop-filter: blur(50px);
+     }
+
+     .title {
+          margin-bottom: 50px;
+     }
+     .title-desc {
+          .desc {
+               padding-right: 150px;
+               font-size: 34px;
+               font-style: normal;
+               font-weight: 600;
+               line-height: 138.9%; /* 44.448px */
+          }
+     }
+
+     .card-apps {
+          margin: 150px 0 0 0;
+          .card-item {
+               padding: 10px;
+
+               .card-box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    padding: 15px;
+                    border-radius: 20px;
+                    border: 1px solid #c3c3bf;
+                    min-height: 450px;
+
+                    .img-title-desc {
+                         .img-card {
+                              display: block;
+                              height: 150px;
+                              border-radius: 15px;
+                              background: #c4c4c4;
+                              margin-bottom: 15px;
+                              overflow: hidden;
+
+                              img {
+                                   transition: 0.5s all ease-in-out;
+
+                                   &:hover {
+                                        transform: scale(1.2);
+                                   }
+                              }
+                         }
+                         span {
+                              font-size: 16px;
+                              font-style: normal;
+                              font-weight: 600;
+                         }
+                         p {
+                              font-size: 14px;
+                              font-style: normal;
+                              font-weight: 400;
+                              color: #777574;
+                         }
+                    }
+               }
+          }
+     }
+}
+
+// about-slams
+.about-slams {
+     // margin-bottom: 100px;
+     background-image: url("/assets/img/bg-about.svg");
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: bottom;
+     min-height: 600px;
+     .title-desc {
+          margin-top: 50px;
+          @include media-breakpoint-up(md) {
+               padding-right: 70%;
+          }
+          .title {
+               font-size: 32px;
+               font-style: normal;
+               font-weight: 600;
+               line-height: 138.9%;
+          }
+          p {
+               margin-top: 40px;
+               color: #777574;
+               font-size: 15px;
+               font-style: normal;
+               font-weight: 500;
+               line-height: 138.9%; /* 20.835px */
+          }
+     }
+}

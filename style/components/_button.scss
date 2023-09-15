@@ -1,0 +1,34 @@
+.btn-custom {
+     background-color: var(--primary-color);
+     padding: 10px 25px;
+     color: var(--font-white);
+     font-size: 14px;
+     font-weight: 500;
+     border-radius: 10px;
+     cursor: pointer;
+     text-decoration: none;
+     height: max-content;
+     width: max-content;
+     border: 2px solid var(--primary-color);
+     transition: all 0.2s ease-out;
+
+     &:hover {
+          // border: 2px #5f020d;
+          border: 2px solid var(--primary-color);
+          // background-color: #fff;
+          color: var(--primary-color);
+          // color: var(--font-black);
+     }
+     &.get {
+          &:hover {
+               background-color: #5f020d !important;
+               color: var(--font-white);
+          }
+     }
+     &.login {
+          &:hover {
+               background-color: #5f020d !important;
+               color: var(--font-white);
+          }
+     }
+}

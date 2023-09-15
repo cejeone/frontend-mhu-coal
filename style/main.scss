@@ -1,0 +1,11 @@
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+
+@import "global";
+
+@import "pages/home";
+
+
+//components
+@import "components/button";
+@import "components/navbar";
+@import "components/footer";
