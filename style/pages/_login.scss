@@ -1,0 +1,98 @@
+.login {
+     @include media-breakpoint-up(md) {
+          .bg-image {
+               display: block;
+               height: 97vh;
+               overflow: hidden;
+               border-radius: 20px;
+               margin: 10px;
+
+               background-image: url("/assets/img/bg-login.jpg");
+               background-position: center;
+               background-size: cover;
+               background-repeat: no-repeat;
+
+               // img {
+               //      width: 150%;
+               // }
+          }
+     }
+
+     .box-login {
+          margin: 10px;
+
+          .login {
+               text-align-last: end;
+          }
+
+          .box-form-login {
+               display: flex;
+               align-items: center;
+               @include media-breakpoint-up(md) {
+                    height: 85vh;
+               }
+          }
+
+          .form-login {
+               margin-top: 50px;
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               .title {
+                    span {
+                         text-align: center;
+                         font-size: 24px;
+                         font-style: normal;
+                         font-weight: 600;
+
+                         &.geo {
+                              color: var(--primary-color);
+                         }
+                    }
+
+                    p {
+                         margin-top: 20px;
+                         padding: 0 100px;
+                         color: #777574;
+                         text-align: center;
+                         font-size: 14px;
+                         font-style: normal;
+                         font-weight: 500;
+                    }
+               }
+
+               .form {
+                    width: 100%;
+                    @include media-breakpoint-up(lg) {
+                         padding: 50px 70px;
+                    }
+
+                    .form-custom {
+                         padding: 10px 25px;
+                         border-radius: 10px;
+
+                         &:focus {
+                              box-shadow: none;
+                              border: 1px solid var(--primary-color);
+                         }
+
+                         &:active {
+                              box-shadow: none;
+                         }
+                    }
+               }
+          }
+
+          .back {
+               a {
+                    text-decoration: none;
+                    color: var(--font-black);
+                    font-size: 14px;
+
+                    &:hover {
+                         color: var(--primary-color);
+                    }
+               }
+          }
+     }
+}

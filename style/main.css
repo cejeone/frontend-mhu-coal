@@ -12014,7 +12014,7 @@ body .row {
   position: relative;
   margin: -85px 10px 10px 10px;
   padding: 50px;
-  height: 97vh;
+  height: 96vh;
   border-radius: 20px;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.45) 100%), url("/assets/img/bg-header-hero.jpg"), lightgray 50%;
   background-size: cover;
@@ -12147,6 +12147,87 @@ body .row {
   line-height: 138.9%; /* 20.835px */
 }
 
+@media (min-width: 768px) {
+  .login .bg-image {
+    display: block;
+    height: 97vh;
+    overflow: hidden;
+    border-radius: 20px;
+    margin: 10px;
+    background-image: url("/assets/img/bg-login.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+.login .box-login {
+  margin: 10px;
+}
+.login .box-login .login {
+  -moz-text-align-last: end;
+       text-align-last: end;
+}
+.login .box-login .box-form-login {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .login .box-login .box-form-login {
+    height: 85vh;
+  }
+}
+.login .box-login .form-login {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login .box-login .form-login .title span {
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+.login .box-login .form-login .title span.geo {
+  color: var(--primary-color);
+}
+.login .box-login .form-login .title p {
+  margin-top: 20px;
+  padding: 0 100px;
+  color: #777574;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+}
+.login .box-login .form-login .form {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .login .box-login .form-login .form {
+    padding: 50px 70px;
+  }
+}
+.login .box-login .form-login .form .form-custom {
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+.login .box-login .form-login .form .form-custom:focus {
+  box-shadow: none;
+  border: 1px solid var(--primary-color);
+}
+.login .box-login .form-login .form .form-custom:active {
+  box-shadow: none;
+}
+.login .box-login .back a {
+  text-decoration: none;
+  color: var(--font-black);
+  font-size: 14px;
+}
+.login .box-login .back a:hover {
+  color: var(--primary-color);
+}
+
 .btn-custom {
   background-color: var(--primary-color);
   padding: 10px 25px;
@@ -12174,6 +12255,9 @@ body .row {
 .btn-custom.login:hover {
   background-color: #5f020d !important;
   color: var(--font-white);
+}
+.btn-custom.submit {
+  width: 100%;
 }
 
 .blur-background {
